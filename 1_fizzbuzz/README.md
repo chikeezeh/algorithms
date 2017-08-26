@@ -15,7 +15,10 @@ fizzBuzz(5) =
         4
         Buzz
 ```
-
+To run the code type <pythonX fizzbuzz.py>, where X is the python version. The
+program would ask for an Integer, provide one and see it do its magic.
+**NOTE:** The program doesn't validate inputs, so you will get an error if you
+don't input and Integer. 
 ## **LICENSE**
 MIT License
 
