@@ -1,24 +1,29 @@
 # **OVERVIEW**
-This program takes an Integer, then prints out every number from 1 to that
-Integer.
-If the Integer is divisible by 3, the program prints Fizz, if the Integer is
-divisible by 5 the program prints Buzz, if the Integer is divisible by 3 and 5
-the program prints FizzBuzz.
+This program takes two sets of string, noteText and magazineText,
+the goal of the program is to determine if the strings found in noteText can
+all be found in magazineText.  
 The program is written in [Python 3](https://www.python.org/downloads/)
 
-For example, given the number 5,
+For example, given the number two sets of strings,
+>noteText = 'This is a secret note for you from a secret admirer'
+
+>magazineText ='puerto rico is a great place you must hike far from town to find
+>a secret waterfall that I am an admirer of but note that it is not as hard as it
+>seems this is my advice for you'
+
 ```
-fizzBuzz(5) =
-        1
-        2
-        Fizz
-        4
-        Buzz
+harmlessRansomeNote(noteText, magazineText) =
+  False
+
 ```
-To run the code type pythonX fizzbuzz.py, where X is the python version. The
-program would ask for an Integer, provide one and see it do its magic.
-**NOTE:** The program doesn't validate inputs, so you will get an error if you
-don't input and Integer.
+The program returns **False** because the word **secret** appears twice in
+noteText but once in magazineText.
+
+To run the code copy the code to your machine, change the **noteText** and
+**magazineText** variables, then type pythonX harmlessRansomeNote.py in your
+console to run the program.
+
+
 ## **LICENSE**
 MIT License
 
