@@ -9,7 +9,7 @@ def grid_traveler(m,n, memo={}):
     if m == 0 or n == 0:
         return 0
     else:
-        memo[(m,n)] = (grid_traveler(m-1,n) + grid_traveler(m, n-1))
+        memo[(m,n)] = (grid_traveler(m-1,n,memo) + grid_traveler(m, n-1,memo))
         memo[(n,m)] = memo[(m,n)]
         return memo[(m,n)]
 
