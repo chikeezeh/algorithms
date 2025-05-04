@@ -64,21 +64,38 @@ class CircularLL:
             if cur_node == self.head:
                 break
         print(" --> ".join(result) + " --> (head)")
+    def __len__(self):
+        """
+        find the length of a circular ll
+        """
+        count = 0
+        cur_node = self.head
+        while cur_node:
+            count += 1
+            if cur_node.next == self.head:
+                break
+            cur_node = cur_node.next
+        return count
 
 
 # test code
-cll1 = CircularLL()
-cll1.printlist()
-cll1.prepend(1)
-cll1.prepend(2)
-cll1.prepend(4)
-cll1.prepend(7)
-cll1.printlist()
+# cll1 = CircularLL()
+# cll1.printlist()
+# cll1.prepend(1)
+# cll1.prepend(2)
+# cll1.prepend(4)
+# cll1.prepend(7)
+# cll1.printlist()
 
 cll2 = CircularLL()
 cll2.printlist()
+print(len(cll2))
 cll2.append(1)
+print(len(cll2))
 cll2.append(2)
+print(len(cll2))
 cll2.append(4)
+print(len(cll2))
 cll2.append(7)
+print(len(cll2))
 cll2.printlist()
