@@ -24,10 +24,18 @@ class CircularLL:
     def prepend(self, data):
         # add an element to the beginning of the circularll
         # if the cll is empty
+        new_node = Node(data)
         if not self.head:
-            new_node = Node(data)
             self.head = new_node
             self.head.next = self.head
+        cur_node = self.head
+        while cur_node:
+            if cur_node.next == self.head:
+                cur_node.next = new_node
+                new_node.next = self.head
+                self.head = new_node
+                break
+            cur_node = cur_node.next
     def append(self, data):
         # add a node to the end of the circularll
         # if the cll is empty
@@ -61,8 +69,16 @@ class CircularLL:
 # test code
 cll1 = CircularLL()
 cll1.printlist()
-cll1.append(1)
-cll1.append(2)
-cll1.append(4)
-cll1.append(4)
+cll1.prepend(1)
+cll1.prepend(2)
+cll1.prepend(4)
+cll1.prepend(7)
 cll1.printlist()
+
+cll2 = CircularLL()
+cll2.printlist()
+cll2.append(1)
+cll2.append(2)
+cll2.append(4)
+cll2.append(7)
+cll2.printlist()
