@@ -45,9 +45,15 @@ class Bst:
         return traversal
 
 # Example usage
-tree = Bst(1)
-tree.root.left = Node(2)
-tree.root.right = Node(3)
-tree.root.left.left = Node(4)
+tree = Bst(10)
+tree.root.left = Node(5)
+tree.root.right = Node(15)
+tree.root.left.left = Node(2)
 tree.root.left.right = Node(5)
+tree.root.left.left.left = Node(1)
+tree.root.right.left = Node(13)
+tree.root.right.right = Node(22)
+tree.root.right.left.right = Node(14)
+print("Inorder traversal: " + tree.print_tree("inorder"))
 print("Preorder traversal: " + tree.print_tree("preorder"))
+print("Postorder traversal: " + tree.print_tree("postorder"))
