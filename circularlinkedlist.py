@@ -111,6 +111,16 @@ class CircularLL:
         print("\n")
         print("secondhalf")
         second_half_cll.printlist()
+    def is_circular_linked_list(self,input_list):
+        # create a fast and slow pointer
+        fast = slow = input_list.head
+        while fast.next and fast.next.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast.data == slow.data:
+                return True
+        return False
+
 
 
 
@@ -135,6 +145,15 @@ class CircularLL:
 # cll2.append(7)
 # print(len(cll2))
 # cll2.printlist()
+# cll2 = CircularLL()
+# cll2.append("A")
+# cll2.append("B")
+# cll2.append("C")
+# cll2.append("D")
+# cll2.append("E")
+# cll2.append("F")
+# cll2.printlist()
+# cll2.split_list()
 cll2 = CircularLL()
 cll2.append("A")
 cll2.append("B")
@@ -143,4 +162,4 @@ cll2.append("D")
 cll2.append("E")
 cll2.append("F")
 cll2.printlist()
-cll2.split_list()
+print(cll2.is_circular_linked_list(cll2))
