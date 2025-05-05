@@ -76,6 +76,42 @@ class CircularLL:
                 break
             cur_node = cur_node.next
         return count
+    def split_list(self):
+        # function splits a circularLL in the middle and prints out the first and second halves.
+        # check if the cll is empty
+        if not self.head:
+            return
+        
+        # we need to get the mid point
+        size = len(self)
+        # if size is == 1
+        if size == 1:
+            print(self)
+            return
+        # if greater than 1
+        first_half = []
+        first_half_cll = CircularLL()
+        second_half = []
+        second_half_cll = CircularLL()
+        mid = size // 2
+        cur_node = self.head
+        for _ in range(mid):
+            first_half.append(cur_node.data)
+            cur_node = cur_node.next
+        for _ in range(mid,size):
+            second_half.append(cur_node.data)
+            cur_node = cur_node.next
+        
+        for first in first_half:
+            first_half_cll.append(first)
+        for second in second_half:
+            second_half_cll.append(second)
+        print("firsthalf")
+        first_half_cll.printlist()
+        print("\n")
+        print("secondhalf")
+        second_half_cll.printlist()
+
 
 
 # test code
@@ -87,15 +123,24 @@ class CircularLL:
 # cll1.prepend(7)
 # cll1.printlist()
 
+# cll2 = CircularLL()
+# cll2.printlist()
+# print(len(cll2))
+# cll2.append(1)
+# print(len(cll2))
+# cll2.append(2)
+# print(len(cll2))
+# cll2.append(4)
+# print(len(cll2))
+# cll2.append(7)
+# print(len(cll2))
+# cll2.printlist()
 cll2 = CircularLL()
+cll2.append("A")
+cll2.append("B")
+cll2.append("C")
+cll2.append("D")
+cll2.append("E")
+cll2.append("F")
 cll2.printlist()
-print(len(cll2))
-cll2.append(1)
-print(len(cll2))
-cll2.append(2)
-print(len(cll2))
-cll2.append(4)
-print(len(cll2))
-cll2.append(7)
-print(len(cll2))
-cll2.printlist()
+cll2.split_list()
