@@ -1,0 +1,170 @@
+In halls where bytes and circuits dwell,
+Where data flows and compilers swell,
+A whisper stirred the silent gloom—
+Of freedom born in hacker’s room.
+
+No walls of gold, no gates of chain,
+Just open fields in bright domain.
+The seeds were sown in Nordic land,
+By Linus with a coder’s hand.
+
+"I make this free," the young man said,
+"No price to chain the path I tread.
+Let knowledge flow like rivers wide—
+Come join me, friends, and code with pride."
+
+From kernel roots the tree did grow,
+With bashful bash and systems low.
+A scheduler that dreams in ticks,
+And pipes that pass like clever tricks.
+
+In bits and bytes the kernel breathes,
+With drivers deep like hidden sheaths.
+IRQ and syscall dance as kin—
+The song of process shall begin.
+
+Its heart, the kernel—tight and small,
+Yet vast enough to power all.
+With sysfs, procfs, pages swapped,
+In endless loop, it never stopped.
+
+The shell—a poet's interface,
+Where words take flight and leave no trace.
+A prompt, a flash, then magic done,
+With "grep" and "awk" beneath the sun.
+
+Oh ls, reveal thy treasures here,
+While chmod guards what's truly dear.
+With top I watch the system's soul,
+And cron ensures it meets each goal.
+
+In bash or zsh, scripts arise—
+The automation of the wise.
+No need for clicks, no need for flair,
+Just logic plain, and systems bare.
+
+The file tree tall with ancient limbs—
+From /root to /dev, a hymn of hymns.
+/etc where configs lie still,
+/usr where users test their skill.
+
+/var shall write, /tmp shall fade,
+/proc shows how the beast is made.
+Each mount a tale, each inode name—
+A structure rich, yet none the same.
+
+The permissions speak in riddle runes—
+Of users, groups, and world in tunes.
+With chown, I shape the realm anew—
+And give to each what they are due.
+
+Its creed is “Free,” but not just beer—
+It’s liberty that engineers.
+The GPL, in Stallman’s hand,
+Forged freedoms few could understand.
+
+Not closed behind a corporate veil,
+Nor bound in court with license frail.
+Its soul is shared in every line—
+Its truth, a flame no laws confine.
+
+And from this source a forest sprung:
+Of distros broad and proudly sung.
+
+Debian stands in stable might,
+With apt so clean and upgrades light.
+Fedora dreams on bleeding edge,
+Where Red Hat makes its solemn pledge.
+
+Arch, the minimalist's delight,
+A rolling wave of daily fight.
+Gentoo builds from deepest stone—
+A shrine for those who roam alone.
+
+Ubuntu came to welcome all—
+With ease to rise, no need to fall.
+Pop! and Mint and Manjaro rise—
+Each painting Linux in new guise.
+
+It powers routers, clouds and steel,
+And phones that in your palms you feel.
+It rides in cars and space-bound drones,
+In datacenters’ guarded zones.
+
+Android bears its beating core,
+A billion pockets now explore.
+And servers hum its steady tune,
+From morning sun to silver moon.
+
+No king commands it from above,
+Its rule is merit, skill, and love.
+Its coders work in dark and day—
+And give the gift, then walk away.
+
+It brought together minds afar,
+Who met through mail and IRC star.
+Git came forth from kernel’s flame,
+And changed the world in versioned name.
+
+The CLI, for some, too bare—
+Yet GUIs bloom with beauty rare.
+Gnome and KDE display
+A windowed world in GTK.
+
+XFCE for speed refined,
+While i3 suits the keyboard mind.
+Choice is power, and choice is vast—
+For every user, a fitting cast.
+
+Security, thy noble vow—
+No backdoor here, no hidden cow.
+With SELinux keeping watch,
+And AppArmor’s silent notch.
+
+Though threats may come from east and west,
+The penguin stands and guards its nest.
+Its eyes are many, wide and clear—
+A thousand watchers hold it dear.
+
+No secret lies it dares to keep,
+Its heart exposed, its logic deep.
+So bugs may fall, and flaws may fade—
+When all can see how it's been made.
+
+And yet, beyond the code and shell,
+Beyond the files and process well,
+There beats a pulse, a dream that stays—
+A vision cast in hacker's praise.
+
+To learn, to teach, to build, to share—
+To shape the world with utmost care.
+No patents here, no profit chains—
+Just freedom coursing through our veins.
+
+We gather still, in forums bright,
+In wikis deep and mailing plight.
+We share the patch, the fix, the lore—
+And open wide each system’s door.
+
+So raise a toast with mug or key,
+To Tux and all who dare be free.
+For Linux is no thing you own—
+But something greater, ever grown.
+
+It lives in lines of humble code,
+In silent servers long abode.
+It thrives where minds are brave and bold—
+And never does what it is told.
+
+A hymn, a pledge, a cry of cheer—
+For all who walk the penguin’s sphere.
+In every man and every dmesg,
+We find the soul of Linux's edge.
+
+So if you seek to understand
+The world built not by single hand,
+Then trace the logs, the source, the flame—
+And know: the Penguin takes no name.
+
+For Linux lives where minds are free—
+A code, a cause, a legacy.
