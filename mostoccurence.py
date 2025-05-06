@@ -7,7 +7,7 @@ constraints:
 2. no symbols like '!^*'...etc
 """
 #read in the files
-def top_words(file_path):
+def top_words(file_path, n=1):
     with open(file_path, 'r',encoding='utf-8') as text_file:
         contents = text_file.read().lower()
     contents = findall(r'\b[a-z]+\b', contents) # remove non alphabetical characters
@@ -22,6 +22,6 @@ def top_words(file_path):
     # this will give us a list
     sorted_word_counter = sorted(word_counter.items(), key= lambda x: (-x[1]))
 
-    return sorted_word_counter[:1]
+    return sorted_word_counter[:n]
 
-print(top_words('poem.txt'))
+print(top_words('poem.txt',5))
