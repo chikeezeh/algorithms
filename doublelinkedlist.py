@@ -37,7 +37,7 @@ class DoublyLinkedList:
         result = []
         cur_node = self.head
         while cur_node:
-            result.append(cur_node.data)
+            result.append(str(cur_node.data))
             cur_node = cur_node.next
         print("null <-- "+" <--> ".join(result) + " --> null")
 
@@ -46,5 +46,8 @@ dll1.print_list()
 dll1.append("A")
 dll1.print_list()
 dll1.append("B")
+dll1.print_list()
+dll1.append("C")
+dll1.append(50)
 dll1.print_list()
 
