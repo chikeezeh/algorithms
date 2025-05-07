@@ -30,7 +30,13 @@ class DoublyLinkedList:
 
     def prepend(self,data):
         # add a node to the beginning of a dll
-        pass
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        self.head.prev = new_node
+        new_node.next = self.head
+        self.head = new_node
 
     def print_list(self):
         # print the nodes of a dll
@@ -42,12 +48,13 @@ class DoublyLinkedList:
         print("null <-- "+" <--> ".join(result) + " --> null")
 
 dll1 = DoublyLinkedList()
+dll1.prepend("F")
 dll1.print_list()
 dll1.append("A")
 dll1.print_list()
 dll1.append("B")
 dll1.print_list()
 dll1.append("C")
-dll1.append(50)
+dll1.prepend(50)
 dll1.print_list()
 
