@@ -77,6 +77,42 @@ class DoublyLinkedList:
                 new_node.prev = prev
                 return 
             cur_node = cur_node.next
+    def delete_node(self,key):
+        cur_node = self.head
+        while cur_node:
+            if cur_node.data == key and cur_node == self.head:
+                # if only the head node exist
+                if not cur_node.next:
+                    cur_node = None
+                    self.head = None
+                    return
+                # deleting head node, but there is another node that will become
+                # the new head node
+                else:
+                    new_head = cur_node.next
+                    cur_node.next = None 
+                    cur_node = None
+                    new_head.prev = None
+                    self.head = new_head
+                    return
+            # deleting non head node    
+            elif cur_node.data == key and cur_node.next:
+                prev = cur_node.prev
+                nxt = cur_node.next
+                prev.next = nxt
+                nxt.prev = prev
+                cur_node.next = None
+                cur_node.prev = None
+                cur_node = None
+                return
+            # deleting non head node that is a tail node
+            elif cur_node.data == key and not cur_node.next:
+                prev = cur_node.prev
+                prev.next = None
+                cur_node = None
+                return
+            cur_node = cur_node.next
+        
 
 dll1 = DoublyLinkedList()
 dll1.prepend("F")
@@ -93,4 +129,7 @@ dll1.add_after_node("F","X")
 dll1.print_list()
 dll1.add_before_node("X","Y")
 dll1.print_list()
+dll1.delete_node("T")
+dll1.print_list()
+
 
