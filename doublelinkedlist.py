@@ -112,24 +112,41 @@ class DoublyLinkedList:
                 cur_node = None
                 return
             cur_node = cur_node.next
-        
+    def reverse(self):
+        tmp = None
+        cur_node = self.head
+        while cur_node: # loop till we get to tail node
+            tmp = cur_node
+            cur_node.prev, cur_node.next = cur_node.next, cur_node.prev
+            cur_node = cur_node.prev # because prev/next are swapped
+        self.head = tmp
+    def remove_duplicates(self):
+        # create an empty dictionary to house elements in our ll
+        dup_dict = {}
+        cur_node = self.head
+        while cur_node:
+            if cur_node.data in dup_dict:
+                nxt = cur_node.next
+                self.delete_node(cur_node.data)
+                cur_node = nxt
+            else:
+                dup_dict[cur_node.data] = 1
+                cur_node = cur_node.next
 
-dll1 = DoublyLinkedList()
-dll1.prepend("F")
+
+dll1 = DoublyLinkedList() 
+dll1.prepend("A")
 dll1.print_list()
 dll1.append("A")
 dll1.print_list()
-dll1.append("B")
+dll1.append("G")
 dll1.print_list()
-dll1.append("C")
+dll1.append("A")
 dll1.prepend(50)
 dll1.print_list()
+dll1.remove_duplicates()
+dll1.print_list()
 
-dll1.add_after_node("F","X")
-dll1.print_list()
-dll1.add_before_node("X","Y")
-dll1.print_list()
-dll1.delete_node("T")
-dll1.print_list()
+
 
 
