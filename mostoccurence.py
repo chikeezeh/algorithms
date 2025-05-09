@@ -1,5 +1,5 @@
 from re import findall
-
+from collections import Counter
 """
 read in a file , return the most occuring word in the file.
 constraints:
@@ -24,4 +24,12 @@ def top_words(file_path, n=1):
 
     return sorted_word_counter[:n]
 
+def top_words_counter(filepath, n=1):
+    with open(filepath, 'r',encoding='utf-8') as text_file:
+        contents = text_file.read().lower()
+    contents = findall(r'\b[a-z]+\b', contents)
+    word_counts = Counter(contents)
+    return word_counts.most_common(n)
+
 print(top_words('poem.txt',5))
+print(top_words_counter('poem.txt',5))
