@@ -13,5 +13,21 @@ def preci_increment(A):
     # use list comprehension to turn our answer back to an array of digits
     return [int(digit) for digit in str(s)]
 
-print(preci_increment([9,9,9]))
+print(preci_increment([1,9,9]))
 
+def add_one(A):
+    # add one to the last element
+    A[-1] += 1
+    # loop through the list and carry the one
+    for i in reversed(range(1, len(A))):
+        if A[i] != 10:
+            break
+        A[i] = 0
+        A[i-1] += 1
+    # at the end, check if the first element is 10
+    if A[0] == 10:
+        A[0] = 1
+        A.append(0)
+    return A
+
+print(add_one([1,9,9]))
