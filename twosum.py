@@ -26,6 +26,22 @@ def two_sum_hash(A, target):
             target_hash[target - element] = element
     return "No pair"
 
+def two_sum_pointers(A, target):
+    # assuming A is sorted in ascending order
+    # we can employ two pointers to traverse the array
+    # this will give us O(n) time complexity, and O(1) space complexity
+    left = 0
+    right = len(A) - 1
+    while left < right:
+        if A[left] + A[right] == target:
+            return (A[left], A[right])
+        elif A[left] + A[right] < target:
+            left +=1
+        else:
+            right -= 1
+    return "No pair"
+
 
 print(two_sum_brute([2,3,4,5,7], 11))
 print(two_sum_hash([2,3,4,5,7], 11))
+print(two_sum_pointers([2,3,4,5,7], 11))
