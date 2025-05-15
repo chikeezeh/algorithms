@@ -6,6 +6,14 @@ class Node(object):
 class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)
+    def pre_order_print(self, start, traversal):
+        """Root->Left->Right"""
+        if start:
+            traversal += str(start.value) + "->"
+            traversal = self.pre_order_print(start.left, traversal)
+            traversal = self.pre_order_print(start.right, traversal)
+        return traversal
+
 
 tree = BinaryTree(1)
 tree.root.left = Node(2)
